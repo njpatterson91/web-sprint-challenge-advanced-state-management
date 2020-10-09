@@ -23,12 +23,10 @@ export const reducer = (state = initialState, action) => {
     case ADD_DATA:
       return {
         ...state,
-        isLoading: true,
       };
     case ADD_SUCCESS:
       return {
         ...state,
-        isLoading: false,
         smurf: [...action.payload],
       };
     default:

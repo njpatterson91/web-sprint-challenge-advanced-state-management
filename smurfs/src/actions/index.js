@@ -19,8 +19,6 @@ export const fetchData = () => (dispatch) => {
 };
 
 export const addData = (value) => (dispatch) => {
-  console.log("actions, addSmurf, dispatch : ", dispatch);
-
   dispatch({ type: ADD_DATA });
   axios
     .post("http://localhost:3333/smurfs", {
